@@ -7,7 +7,7 @@ header("Access-Control-Expose-Headers: Content-Length,Content-Range");
 header("Access-Control-Allow-Headers: Range");
 header("Accept-Ranges: bytes");
 #use token file - it will generate tokens on every request and is useful if you want to make streams public . Tokens will not be banned as they are uniqe for each user.
-$p= @file_get_contents("http://localhost/jio/sd/token.php");
+$p= @file_get_contents("https://mamo45.herokuapp.com/token.php");
 # This is single token generated based on TIME 
 # if more than 10 users will watch stream ar same time i.e 10:10:59 so 10 users will have same token. 
 
